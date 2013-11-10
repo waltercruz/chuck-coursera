@@ -22,7 +22,7 @@ while( now < later  )
         
         Std.mtof(phrase2[i] +12 ) => tr.freq;
         .25::T => now; 
-        dorian[ Math.random2(0,7) ] +  octave[Math.random2(0,2)]=> float freq;
+        dorian[ Math.random2(0,dorian.cap()-1) ] +  octave[Math.random2(0,octave.cap()-1)]=> float freq;
         Std.mtof(freq) => sw.freq;
         Math.sin( now / 1::second * 2 * pi ) => p.pan;
     }
